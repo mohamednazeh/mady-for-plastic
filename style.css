@@ -40,10 +40,8 @@ header.sticky .header-container {
 .logo img {
     max-width: 70px;
     height: auto;
-    /* border: 2px solid #fff; */
     border-radius: 5px;
     padding: 5px;
-    /* background-color: #fff; */
     transition: all 0.3s ease;
 }
 
@@ -157,11 +155,47 @@ h2 {
     font-size: 32px;
 }
 
-.about p {
-    font-size: 18px;
-    text-align: justify;
+.about {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about .about-content {
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
+}
+
+.about h3 {
+    color: #003d80;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about .video-container {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.about .video-container video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .video-caption {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .product-grid {
@@ -305,16 +339,7 @@ h2 {
     color: #333;
 }
 
-/* footer {
-    background: linear-gradient(to right, #003d80, #0057b8);
-    color: #fff;
-    padding: 20px 40px;
-    margin-top: 40px;
-    text-align: center;
-} */
-
 footer {
-    /* background: #003d80; */
     color: #003d80;
     text-align: center;
     padding: 5px;
@@ -402,5 +427,14 @@ footer {
     }
     .footer-section a {
         margin: 0 5px;
+    }
+    .about h3 {
+        font-size: 20px;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    .about .video-container video {
+        height: auto;
     }
 }
