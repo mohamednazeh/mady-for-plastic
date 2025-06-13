@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Mady For Plastic " data-ar="ماضي للبلاستيك ">Mady For Plastic </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="hero">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Mady For Plastic Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#about" data-en="About Us" data-ar="من نحن">About Us</a></li>
+                    <li><a href="#products" data-en="Products" data-ar="المنتجات">Products</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1 data-en="Mady For Plastic" data-ar="ماضي للبلاستيك">Mady For Plastic</h1>
+            <!-- <h2 data-en="ماضي للبلاستيك" data-ar="ماضي للبلاستيك">ماضي للبلاستيك</h2> -->
+            <!-- <p data-en="Innovative plastic packaging solutions tailored for your needs." data-ar="حلول تغليف بلاستيكية مبتكرة مصممة خصيصًا لاحتياجاتك.">Innovative plastic packaging solutions tailored for your needs.</p> -->
+        </div>
+    </header>
+    <div class="container" id="home">
+        <section class="about" id="about">
+            <h2 data-en="About Us" data-ar="من نحن">About Us</h2>
+            <p data-en="Mady for Plastic is an Egyptian leading company that was established in 1995.Mady Company manufactures high quality plastic products in conformity with international standards." data-ar="ماضي للبلاستك هي شركة رائدة في صناعة البلاستيك في مصر منذ عام 1995 وتميز بالجودة العالية للمنتجات المطابقة للجودة العالمية.">
+            Mady for Plastic is an Egyptian leading company that was established in 1995.Mady Company manufactures high quality plastic products in conformity with international standards.
+            </p>
+            <p data-en="We proudly produce durable, multi-size barrels and all plastic containers that are safe to be used for food, chemicals, paints, and for industrial uses.Harsh tests proved that our products are the best in times of crisis and are in conformity with international standards." data-ar=" شركة ماضي قادرة علي تصنيع البراميل والعبوات البلاستيكية بجميع أحجامها وآمنة تماماً للإستخدام في المواد الغذائية والكيماويات وصناعة الدهانات والإستخدامات الصناعية والتصدير نحن ننتج وفقاً للمعاير الدولية واثبتنا اننا الافضل في حالة الاختبارات القوية والحرجة .">
+            We proudly produce durable, multi-size barrels and all plastic containers that are safe to be used for food, chemicals, paints, and for industrial uses.Harsh tests proved that our products are the best in times of crisis and are in conformity with international standards.
+            </p>
+            <p data-en="Quality, flexibility, and our financial independence make us ready to meet all the expectations of our customers.We are always after development to sufficiently meet the needs of the local and international markets. sufficiently meet the needs of the local and international markets." data-ar="تعني مرونتنا وجودتنا واستقلاليتنا اننا قادرون علي الاستجابة بسرعة لمجموعة متنوعة من متطلبات العملاء ونسعى دائماً للتطوير لتلبية احتياجات الاسواق المحلية والعالمية.">
+            Quality, flexibility, and our financial independence make us ready to meet all the expectations of our customers.We are always after development to sufficiently meet the needs of the local and international markets. sufficiently meet the needs of the local and international markets.
+            </p>
+        </section>
+
+        <section class="products" id="products">
+            <h2 data-en="Our Products" data-ar="منتجاتنا">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card" onclick="openModal('220 Liters ',  'images/220 Liters  for Multi-use food and chemical.jpeg')">
+                    <img src="images/220 Liters  for Multi-use food and chemical.jpeg" alt="220 Liters ">
+                    <h3 data-en="220 Liters" data-ar="220 لتر">220 Liters</h3>
+                    <p data-en="For multi-use food and chemical" data-ar="للاستخدام المتعدد للطعام والكيميائيات">For multi-use food and chemical</p>
+                </div>
+                <div class="product-card" onclick="openModal('170 Liters', 'images/170 Liters  for Multi-use food and chemical.jpeg')">
+                    <img src="images/170 Liters  for Multi-use food and chemical.jpeg" alt="170 Liters Drum">
+                    <h3 data-en="170 Liters" data-ar="170 لتر">170 Liters</h3>
+                    <p data-en="For multi-use food and chemical" data-ar="للاستخدام المتعدد للطعام والكيميائيات">For multi-use food and chemical</p>
+                </div>
+                <div class="product-card" onclick="openModal('120 Liters', 'images/120 Liters  for Multi-use food and chemical.jpeg')">
+                    <img src="images/120 Liters  for Multi-use food and chemical.jpeg" alt="120 Liters Drum">
+                    <h3 data-en="120 Liters" data-ar="120 لتر">120 Liters</h3>
+                    <p data-en="For multi-use food and chemical" data-ar="للاستخدام المتعدد للطعام والكيميائيات">For multi-use food and chemical</p>
+                </div>
+                <div class="product-card" onclick="openModal('60 Liters', 'images/60 Liters  for Multi-use food and chemical.jpeg')">
+                    <img src="images/60 Liters  for Multi-use food and chemical.jpeg" alt="60 Liters Drum">
+                    <h3 data-en="60 Liters" data-ar="60 لتر">60 Liters</h3>
+                    <p data-en="For multi-use food and chemical" data-ar="للاستخدام المتعدد للطعام والكيميائيات">For multi-use food and chemical</p>
+                </div>
+                <div class="product-card" onclick="openModal('30 Liters', 'images/30 Liters  for Multi-use food and chemical.jpeg')">
+                    <img src="images/30 Liters  for Multi-use food and chemical.jpeg" alt="30 Liters Drum">
+                    <h3 data-en="30 Liters" data-ar="30 لتر">30 Liters</h3>
+                    <p data-en="For multi-use food and chemical" data-ar="للاستخدام المتعدد للطعام والكيميائيات">For multi-use food and chemical</p>
+                </div>
+                <div class="product-card" onclick="openModal('60 Liters', 'images/60 Liters  jerry can.jpeg')">
+                    <img src="images/60 Liters  jerry can.jpeg" alt="60 Liters Jerry Can">
+                    <h3 data-en="60 Liters Jerry Can" data-ar="جركان 60 لتر">60 Liters Jerry Can</h3>
+                    <p data-en="Jerry can for various uses" data-ar="جركان للاستخدامات المتنوعة">Jerry can for various uses</p>
+                </div>
+                <div class="product-card" onclick="openModal('18-20 Liters', 'images/18-20 Liters  jerry can.jpeg')">
+                    <img src="images/18-20 Liters  jerry can.jpeg" alt="18-20 Liters Jerry Can">
+                    <h3 data-en="18-20 Liters Jerry Can" data-ar="جركان 18-20 لتر">18-20 Liters Jerry Can</h3>
+                    <p data-en="Jerry can for versatile use" data-ar="جركان للاستخدام المتعدد">Jerry can for versatile use</p>
+                </div>
+                <div class="product-card" onclick="openModal('25 Liters', 'images/25 Liters  internal medicine.jpeg')">
+                    <img src="images/25 Liters  internal medicine.jpeg" alt="25 Liters Internal Medicine Drum">
+                    <h3 data-en="25 Liters Internal Medicine" data-ar="25 لتر للأدوية الداخلية">25 Liters Internal Medicine</h3>
+                    <p data-en="For internal medicine storage" data-ar="لتخزين الأدوية الداخلية">For internal medicine storage</p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="productModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-en="×" data-ar="×" onclick="closeModal()">×</span>
+                    <img id="modalImage" src="" alt="Product Image">
+                    <div class="modal-details">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<br>
+       <section class="contact" id="contact">
+            <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <span data-en="Tanta Kafr el Sheikh agricultural road 10 km after the logistics area, Egypt" data-ar="طريق طنطا كفر الشيخ الزراعي 10 كم بعد المنطقة اللوجستية، مصر">Tanta Kafr el Sheikh agricultural road 10 km after the logistics area, Egypt</span></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:madygroup-egypt@yahoo.com" data-en="madygroup-egypt@yahoo.com" data-ar="madygroup-egypt@yahoo.com">madygroup-egypt@yahoo.com</a> | <a href="https://madyforplastic.business.site" target="_blank" data-en="madyforplastic.business.site" data-ar="madyforplastic.business.site">madyforplastic.business.site</a></p>
+            <p><i class="fas fa-share-alt" ></i> <a href="#" target="_blank"><i class="fab fa-facebook" ></i></a> | <a href="#" target="_blank">
+                <i class="fab fa-instagram" ></i></a> | <a href="#" target="_blank">
+                    <i class="fab fa-linkedin" ></i></a> | <a href="#" target="_blank">
+                        <i class="fab fa-twitter" ></i></a></p>
+            
+        </section>
+    </div>
+<!-- 
+    <footer>
+        <p data-en="© 2025 Mady For Plastic . All Rights Reserved." data-ar="© 2025 ماضي للبلاستيك . جميع الحقوق محفوظة.">© 2025 Mady For Plastic | ماضي للبلاستيك. All Rights Reserved.</p>
+    </footer> -->
+ 
+ <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <p data-en="© 2025 Mady For Plastic. All Rights Reserved." data-ar="© 2025 ماضي للبلاستيك. جميع الحقوق محفوظة.">© 2025 Mady For Plastic. All Rights Reserved.</p>
+            </div>
+            
+            
+        </div>
+    </footer> 
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
